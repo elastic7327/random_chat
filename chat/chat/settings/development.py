@@ -34,6 +34,8 @@ MIDDLEWARE += [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
+
+
 STATIC_URL = '/static/'
 
 

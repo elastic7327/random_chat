@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls import include, url
 
+from talk.views import user_list
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('talk.urls', namespace='talk')),
 ]
 
 if settings.DEBUG:
